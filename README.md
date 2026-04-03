@@ -52,22 +52,19 @@ Accounts feature an `isActive` boolean flag. Admins can deactivate users, which 
    npm install
    
 2. **Environment Variables:**
-    ```bash
     Create a .env file in the project root:
-
-3. **Code snippet**
     ```bash
     PORT=3000
     DATABASE_URL="file:./dev.db"
     JWT_SECRET="your_secure_jwt_secret_here"
 
-4. **Initialize Database:**
+3. **Initialize Database:**
     Sync the Prisma schema and generate the client:
      ```bash
     npx prisma db push
     npx prisma generate
 
-5. **Start the Server:**
+4. **Start the Server:**
    ```bash
     npm run dev
     The server will start on http://localhost:3000
